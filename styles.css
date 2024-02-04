@@ -1,0 +1,67 @@
+body    { background-color: #dfe6da;
+        color: #758467; 
+        font-family: Arial;
+        size: 12pt;
+        margin-top: 12pt;
+        margin-bottom: 25pt;
+        margin-left: 100pt;
+        margin-right: 100pt; }
+
+h1      { background-color: #758467;
+        color: #dfe6da;
+        text-align: center;
+        font-family: Verdana; }
+
+h2      { color: #313131;
+        text-align: center; }
+
+h3      { color: #404040;
+        text-align: center; }
+
+h4      { color: #505050; 
+        text-align: center; }
+        
+p       { color: #606060;
+        font-family: Calibri;
+        size: 10pt; }
+
+a:link    { color:#758467;
+            background-color: transparent;
+            text-decoration: underline; }
+
+a:visited { color: #758467;
+            background-color: transparent;
+            text-decoration: none; }
+
+a:hover   { color: #dfe6da;
+            background-color:#758467;
+            text-decoration: none; }
+
+a:active  { color: #dfe6da;
+            background-color:#758467;
+            text-decoration: none; }
+
+.coursetitle { color: #404040; 
+                font-weight: bold; }
+
+.intro { border: 3px outset #758467;
+        background-color: #758467;
+        text-align: center;
+        color: #dfe6da; 
+        padding: 14px;
+        font-family: Calibri; }
+
+.links { border: 3px outset #dfe6da;
+        background-color: #D5DBD0;
+        text-align: center;
+        color: #dfe6da; 
+        padding: 10px;
+        font-family: Calibri; }
+
+th, td { border: 1px solid #758467;
+        padding: 8px; }
+
+table { border-collapse: collapse; 
+        margin-left: auto;
+        margin-right: auto;
+        color: #404040; }
