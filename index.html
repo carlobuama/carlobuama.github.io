@@ -4,34 +4,41 @@
     <title>ITM780 - Carlo Buama's Site</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 
 <h1>Carlo Buama</h1>
 
-<div class="links">
-    <table>
-        <caption><strong>Links!</strong></caption>
-        <tbody>
-            <tr>
-                <th>
-                    <a href="https://github.com/carlobuama">GitHub</a>
-                </th>
-                <td>
-                    A link to my GitHub page!
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <a href="https://www.linkedin.com/in/carlobuama/">LinkedIn</a>
-                </th>
-                <td>
-                    A link to my LinkedIn!
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div class="dropdown">
+    <button onclick="showPlatforms()" class="dropbtn">Social Platforms</button>
+    <div id="platforms" class="dropdown-content">
+        <a href="https://github.com/carlobuama">GitHub</a>
+        <a href="https://www.linkedin.com/in/carlobuama/">LinkedIn</a>
+    </div>
 </div>
 
+<div class="dropdown">
+    <button onclick="showPages()" class="dropbtn">Other</button>
+    <div id="pages" class="dropdown-content">
+        <a href="#">Projects</a>
+        <a href="#">Resume</a>
+        <a href="#">Social Media</a>
+        <a href="#">YouTube Channel</a>
+    </div>
+</div>
+
+<! – Main image that grows when clicked and shrinks when mouse hovers away –>
+<div style="text-align: center;">
+    <img src="images/image0.jpg" alt="Photo of myself wearing a blue shirt" style="width:25%;max-width: max-content;padding-top:5%;" onclick="grow(this)" onmouseleave="shrink(this)">
+</div>
+
+<! – Text that changes when the user enters their name –>
+<h3 id="welcomeText">Welcome to my website! Thank you for visiting.</h3>
+
+
+<div class="container">
+    <button class="welcomeButton" onclick="showName()">Click for a personalized experience.</button>
+</div>
 
 <h2>About Me</h2>
 
