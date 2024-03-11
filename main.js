@@ -1,43 +1,40 @@
-function showName(x) {
-    var name = prompt("Enter your name in the box below:","Carlo")
+var genderAns = '';
+var educationAns ='';
+var browsingAns = '';
+var themeAns = '';
+var careerAns = '';
+var mobileAns = '';
+var wpm = '';
+var feedback = '';
 
-    var welcome = document.getElementById("welcomeText")
-
-    // prevents user from entering empty name
-    if (name === null || name === "") {
-        welcome.innerHTML = "Welcome to my website! Thank you for visiting."
-    } else {
-        welcome.innerHTML = "Welcome to my website, "+name+"! Thank you for visiting.";
+// sets the variables to the provided value when a radio or checkbox is checked
+function answerHandler(variable, value) {
+    if (variable === 'genderAns') {
+        genderAns = value;
+    } else if (variable === 'educationAns') {
+        educationAns = value;
+    } else if (variable === 'browsingAns') {
+        browsingAns = value;
+    } else if (variable === 'themeAns') {
+        themeAns = value;
+    } else if (variable === 'careerAns') {
+        careerAns = value;
+    } else if (variable === 'mobileAns') {
+        mobileAns = value;
     }
 }
 
-function grow(x) {
-    x.style.width = "50%";
+//saves answers to local storage. wpm and feedback are set and saved from here as well since they do not use onclick.
+function saveAnswers() {
+    wpm = document.getElementById('wpm').value;
+    feedback = document.getElementById('feedback').value;
+    localStorage.setItem("gender",genderAns);
+    localStorage.setItem("education",educationAns);
+    localStorage.setItem("browsing",browsingAns);
+    localStorage.setItem("theme",themeAns);
+    localStorage.setItem("career",careerAns);
+    localStorage.setItem("mobile",mobileAns);
+    localStorage.setItem("wpm",wpm);
+    localStorage.setItem('feedback',feedback);
+    alert("Successfully saved your answers!");
 }
-
-function shrink(x) {
-    x.style.width = "25%";
-}
-
-//toggles show when each respective button is clicked
-function showPlatforms() {
-    document.getElementById("platforms").classList.toggle("show");
-}
-
-function showPages() {
-    document.getElementById("pages").classList.toggle("show");
-}
-
-//both menus are closed when clicking outside of them
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
