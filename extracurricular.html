@@ -8,16 +8,19 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <script src="script/main.js" type="text/javascript"></script>
 </head>
+
+<body style="background-color:rgb(245, 245, 245);color:rgb(54, 54, 54)">
 
 <!-- Standard section with crucial information always visible, with site navigation. -->
 <div class="section big name">
     <div class="container">
         <div class="row">
             <div class="four columns">
-                <img src="images/image0.jpg" alt="A photo of me" style="width:75%;max-width:max-content;padding-top:0%;">
+                <img src="images/image0.jpg" alt="A photo of me in my room, wearing a blue shirt." style="width:75%;max-width:max-content;padding-top:0%;">
             </div>
             <div class="eight columns" style="text-align: left;">
                 <h1>carlo buama</h1>
@@ -33,6 +36,21 @@
         </div>
     </div>
 </div>
+
+<!-- Accessibility section visible on every page. -->
+<div class="accessibility">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" style="text-align: left;">
+                <h4>Accessibility Settings</h4><hr>
+                <h6><b>Change Text Size <button onclick="decreaseTextSize()">-</button> <button onclick="increaseTextSize()">+</button></b></h6>
+                <h6><b>Toggle Dark Mode <button id="viewModeButton" onclick="viewingModeToggle()">Off</button></b></h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" style="font-size:100%;">
 
 <div class="about me">
     <div class="container">
@@ -68,11 +86,12 @@
                 </p>
             </div>
             <div class="four columns">
-                <img src="images/biking.jpg" alt="A photo of my friend and I biking" style="width:75%;max-width:max-content;padding-top:0%;">
-                <img src="images/kb.jpg" alt="A photo of my custom keyboard and mouse" style="width:75%;max-width:max-content;padding-top:0%;">
+                <img src="images/biking.jpg" alt="A photo of my friend and I biking." style="width:75%;max-width:max-content;padding-top:0%;">
+                <img src="images/kb.jpg" alt="A photo of my custom keyboard and mouse." style="width:75%;max-width:max-content;padding-top:0%;">
             </div>
         </div>
     </div>
 </div>
-
+</div>
+</body>
 </html>
