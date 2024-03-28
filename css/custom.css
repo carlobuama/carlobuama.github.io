@@ -2,6 +2,8 @@
     border-radius: 100px;
 }
 
+
+
 .section{
     padding: 8rem 0 7rem;
     text-align: center;
@@ -12,10 +14,100 @@
     margin-bottom: 1.2rem;
 }
 
-.navbar {
+.navbar li a {
+    display: block;
+    color: #2c2c2c63;
+    color:#7E809C;
+    font-size: 18px;
+    margin:0;
+    padding: 0;
+}
 
+.navbar li a:hover {
+    background-color: #7E809C;
+    color: rgb(54, 54, 54);
 }
 
 body {
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+ul, li {
+    list-style-type: none;
+    color: rgb(54, 54, 54);
+  }
+
+a:link {
+    color: rgb(54, 54, 54);
+}
+
+a:visited {
+    color: rgb(54, 54, 54);
+}
+
+a:active {
+    color: rgb(54, 54, 54);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #7E809C;
+  border-color: #7E809C; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #7E809C;
+  border-color: #7E809C; }
