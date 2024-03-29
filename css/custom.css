@@ -2,8 +2,6 @@
     border-radius: 100px;
 }
 
-
-
 .section{
     padding: 8rem 0 7rem;
     text-align: center;
@@ -21,11 +19,13 @@
     font-size: 18px;
     margin:0;
     padding: 0;
+    text-decoration: none;
 }
 
 .navbar li a:hover {
     background-color: #7E809C;
-    color: rgb(54, 54, 54);
+    color: rgb(245, 245, 245);
+    text-decoration: none;
 }
 
 body {
@@ -34,25 +34,25 @@ body {
 
 ul, li {
     list-style-type: none;
-    color: rgb(54, 54, 54);
+    color: #7E809C;
   }
 
 a:link {
-    color: rgb(54, 54, 54);
+    color: #7E809C;
 }
 
 a:visited {
-    color: rgb(54, 54, 54);
+    color: #7E809C;
 }
 
 a:active {
-    color: rgb(54, 54, 54);
+    color: #7E809C;
 }
-
+/*
 a:link, a:visited {
     text-decoration: none;
 }
-
+*/
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
