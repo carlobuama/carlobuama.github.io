@@ -1,9 +1,10 @@
 .button {
     border-radius: 100px;
+    min-width:200px;
 }
 
 .section{
-    padding: 8rem 0 7rem;
+    padding: 2rem 0 2rem;
     text-align: center;
 }
 
@@ -12,20 +13,8 @@
     margin-bottom: 1.2rem;
 }
 
-.navbar li a {
-    display: block;
-    color: #2c2c2c63;
-    color:#7E809C;
-    font-size: 18px;
-    margin:0;
-    padding: 0;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #7E809C;
-    color: rgb(245, 245, 245);
-    text-decoration: none;
+.row {
+    padding-top: 5%;
 }
 
 body {
@@ -49,10 +38,26 @@ a:active {
     color: #7E809C;
 }
 /*
+
+
 a:link, a:visited {
     text-decoration: none;
 }
 */
+
+.navbar li a {
+    display: block;
+    color: #2c2c2c63;
+    color:#7E809C;
+    font-size: 18px;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

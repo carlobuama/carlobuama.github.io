@@ -71,8 +71,8 @@ function top() {
 //remembers the state of dark mode
 window.onload = function() {
     var darkModeStatus = localStorage.getItem("darkModeStatus");
-    var toggleButton = document.getElementById("viewModeButton");
     var buttons = document.querySelectorAll("button");
+    var navMenu = document.querySelectorAll(".navbar.item");
 
     if (darkModeStatus === 'dark') {
         document.body.style.backgroundColor = "rgb(54, 54, 54)";
@@ -80,6 +80,9 @@ window.onload = function() {
 
         buttons.forEach(function(button) {
             button.style.color = "rgb(245, 245, 245)";
+        })
+        navMenu.forEach(function(navItem) {
+            navItem.style.color = 'rgb(245, 245, 245)';
         })
 
     } else {
@@ -89,6 +92,8 @@ window.onload = function() {
         buttons.forEach(function(button) {
             button.style.color = "#555";
         })
-
+        navMenu.forEach(function(navItem) {
+            navItem.style.color = '#7E809C';
+        })
     }
 }
