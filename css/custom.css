@@ -3,6 +3,23 @@
     min-width:200px;
 }
 
+
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    
+  }
+  
+/* Only applies in web browsers */
+@media (min-width: 550px) {
+    .title {
+        text-align:left;
+    }
+    .row {
+        padding-top: 5%;
+    }
+}
+
 .section{
     padding: 2rem 0 2rem;
     text-align: center;
@@ -13,9 +30,7 @@
     margin-bottom: 1.2rem;
 }
 
-.row {
-    padding-top: 5%;
-}
+
 
 body {
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
