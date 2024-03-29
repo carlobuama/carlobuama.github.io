@@ -45,7 +45,7 @@ function viewingModeToggle() {
             navItem.style.color = 'rgb(245, 245, 245)';
         })
 
-        localStorage.setItem("darkModeStatus","dark");
+        sessionStorage.setItem("darkModeStatus","dark");
 
     } else {
         document.body.style.backgroundColor = "rgb(245, 245, 245)";
@@ -59,7 +59,7 @@ function viewingModeToggle() {
             navItem.style.color = '#7E809C';
         })
 
-        localStorage.setItem("darkModeStatus","light");
+        sessionStorage.setItem("darkModeStatus","light");
     }
 }
 
@@ -70,7 +70,7 @@ function top() {
 
 //remembers the state of dark mode
 window.onload = function() {
-    var darkModeStatus = localStorage.getItem("darkModeStatus");
+    var darkModeStatus = sessionStorage.getItem("darkModeStatus");
     var buttons = document.querySelectorAll("button");
     var navMenu = document.querySelectorAll(".navbar.item");
 
