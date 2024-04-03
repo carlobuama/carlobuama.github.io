@@ -3,11 +3,27 @@
     min-width:200px;
 }
 
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
 
+img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-    
+    .navbar {
+        text-align: center;
+    }
   }
   
 /* Only applies in web browsers */
@@ -17,6 +33,9 @@
     }
     .row {
         padding-top: 5%;
+    }
+    .navbar {
+        text-align: left;
     }
 }
 
