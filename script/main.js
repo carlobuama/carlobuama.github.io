@@ -56,7 +56,7 @@ function viewingModeToggle() {
         })
 
         navMenu.forEach(function(navItem) {
-            navItem.style.color = '#7E809C';
+            navItem.style.color = 'rgb(54, 54, 54)';
         })
 
         sessionStorage.setItem("darkModeStatus","light");

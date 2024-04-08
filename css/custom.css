@@ -57,19 +57,19 @@ body {
 
 ul, li {
     list-style-type: none;
-    color: #7E809C;
+    color: #0065bd;
   }
 
 a:link {
-    color: #7E809C;
+    color: #0065bd;
 }
 
 a:visited {
-    color: #7E809C;
+    color: #0065bd;
 }
 
 a:active {
-    color: #7E809C;
+    color: #0065bd;
 }
 /*
 
@@ -81,8 +81,7 @@ a:link, a:visited {
 
 .navbar li a {
     display: block;
-    color: #2c2c2c63;
-    color:#7E809C;
+    color: rgb(54, 54, 54);
     font-size: 18px;
     margin:0;
     padding: 0;
