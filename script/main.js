@@ -93,7 +93,7 @@ window.onload = function() {
             button.style.color = "#555";
         })
         navMenu.forEach(function(navItem) {
-            navItem.style.color = '#7E809C';
+            navItem.style.color = 'rgb(54, 54, 54)';
         })
     }
 }
