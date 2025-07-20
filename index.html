@@ -6,88 +6,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My portfolio, and a bit about me.">
     <meta name="author" content="Carlo Buama">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <script src="script/main.js" type="text/javascript"></script>
+    -->
+    <style>
+
+        body {
+            color:rgb(54, 54, 54);
+        }
+
+        header {
+            background-color: #4479BC;
+            color: rgb(245, 245, 245);
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .section {
+            min-height: 300px;
+            display: flex;
+            flex-direction: column; /* stack children vertically */
+            align-items: center;    /* center horizontally */
+            justify-content: center; /* center vertically if you want */
+            padding: 40px 20px; 
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .terminal {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            white-space: nowrap;
+        }
+
+        #typed-text::after {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 1em;
+            background-color: white;
+            margin-left: 2px;
+            animation: blink 1s step-start infinite;
+        }
+    </style>
+
 </head>
 
-<body style="background-color:rgb(245, 245, 245);color:rgb(54, 54, 54)">
+<body>
 
-<!-- Standard section with crucial information always visible -->
-<div class="section big name">
-    <div class="container">
-        <div class="row">
-            <div class="four columns title">
-                <img class="title picture" src="images/image0.jpg" alt="A photo of me" style="width:75%;max-width:max-content;padding-top:0%;">
+    <header class="d-none d-lg-block">
+        <h1>Carlo Buama</h1>
+    </header>
+    
+    <!--navbar DO NOT MODIFY-->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom border-body sticky-top justify-content-center" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="#">Carlo Buama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Education & Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index_old.html">Legacy Site</a>
+                </li>
+            </ul>
+            
             </div>
-            <div class="eight columns" style="text-align: left;">
+        </div>
+    </nav>
+    
+   <div class="container p-3">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Attention:</strong> This webpage is under construction. Please visit the <a href="index.html">legacy site</a> for more info.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+   </div> 
+
+    <!--big name and picture-->
+    <div class="container section">
+
+        
+
+        <!--picture and name-->
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5" style="max-width: 900px; margin: 0 auto; padding: 50px;">
+            <div class="col-md-3">
+                <div class="rounded-circle overflow-hidden" style="width:160px; aspect-ratio: 1 / 1;">
+                    <img src="images/image0.jpg" alt="..." class="w-100 h-100 object-fit-cover">
+                </div>
+                
+            </div>
+            <div class="col-md-9">
                 <h1 style="font-weight: bold;">Carlo Buama</h1>
                 <h5>Business Technology Management Student <br>@ Toronto Metropolitan University</h5>
                 <h6>Toronto, Ontario, Canada</h6>
-                <a href="https://www.torontomu.ca/"><img src="images/TMU_logo.png" alt="Toronto Metropolitan University Logo" style="width:20%;max-width:max-content;padding-top:0%;"></a>
             </div>
         </div>
-    </div>
-</div>
 
+    </div> <!--container end-->
 
-
-<div class="section" id="content">
-    <div class="container">
+    <!--text intro-->
+    <div class="container section">
         <div class="row">
-            <div class="three columns" >
-                <ul class="navbar">
-                    <li><a class="navbar item" href="index.html">Home</a></li>
-                    <li><a class="navbar item" href="https://www.linkedin.com/in/carlobuama/">LinkedIn</a></li>
-                    <li><a class="navbar item" href="https://github.com/carlobuama">GitHub</a></li>
-                    <li><a class="navbar item" href="work.html">Work Experience</a></li>
-                    <li><a class="navbar item" href="education.html">Education</a></li>
-                    <li><a class="navbar item" href="certifications.html">Certifications</a></li>
-                    <li><a class="navbar item" href="about.html">About Me</a></li>
-                    <li><a class="navbar item" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="six columns" style="text-align: left;">
-                <h4 style="font-weight: bold;">A bit about me</h4><hr>
-                <p><h6>Hello there :D
-                    <br>
-                    <br>
-                    My name is Carlo Emmanuel Laguerta Buama, but you can just call me Carlo. I am a fifth-year 
-                    student at Toronto Metropolitan University in the Business Technology Management (BTM) program. 
-                    I hope you have a good time looking around!
-                </h6></p>
-            </div>
-            <div class="three columns">
-                <img src="images/italy dog.JPG" alt="A photo of me with some dog in Italy." style="width:75%;max-width:max-content;padding-top:0%;">
+            <div class="col text-center p-4">
+                <h2>Introduction</h2>
             </div>
         </div>
-        <div class="row" style="padding: 20rem 0 10rem;">
-            <div class="twelve columns">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 px-4">
+                <p>Welcome to my webpage! My name is Carlo Buama. I am a 5th-year student in the Business Technology Management program at Toronto Metropolitan University.</p>
+
+                <p>I hope you enjoy looking around :)</p>
+            </div>
+        </div>
+    </div>
+
+    <!--cards-->
+    <div class="container section">
+        <div class="row">
+            <div class="col text-center p-4">
+                <h2>Highlights</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-auto p-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="terminal card-img-top p-3 text-start bg-black text-white" style="height: 180px; font-family: monospace; overflow: hidden;">
+                        
+                        
+                        <span>> </span><span id="typed-text"> </span>
+                    </div>
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">Personal Projects</h5>
+                        <p class="card-text">Hands-on experience with web design, scripting, and home lab infrastructure.</p>
+                        <a href="#" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto p-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/band.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Work Experience</h5>
+                        <p class="card-text">Built dashboards, streamlined data, and improved sites for the Ontario government.</p>
+                        <a href="#" class="btn btn-primary">View Experience</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto p-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/band.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Skills & Certifications</h5>
+                        <p class="card-text">Certified in Excel, Power BI, Python, and SQL with real-world application.</p>
+                        <a href="#" class="btn btn-primary">View Credentials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Contact-->
+    <div class="container section">
+        <div class="row">
+            <div class="col text-center p-4">
                 <h2>Want to reach out?</h2>
-                <h6>Feel free to send me an email or reach out on LinkedIn!</h6>
-                <a class="button button-primary" href="https://www.linkedin.com/in/carlobuama/" style="min-width:200px">LinkedIn</a>
-                <a class="button button-primary" href="contact.html" style="min-width:200px;">Contacts Page</a>
-                <a class="button button-primary" href="https://docs.google.com/document/d/1kFb8FiKwdmW_ZYyQREhuewxn6MfBhv-7YYQitkt5edk/edit?usp=sharing">View Full Resume</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg px-4">
+                <p>If you have questions, opportunities, or just want to say hi, feel free to reach out through any of the options below:</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Platform</th>
+                            <th scope="col">Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Personal Email</th>
+                            <td>carlobuama@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">University Email</th>
+                            <td>cbuama@torontomu.ca</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Personal Phone</th>
+                            <td>+1 647-456-7075</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Whatsapp</th>
+                            <td>+1 647-456-7075</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">LinkedIn</th>
+                            <td><a href="https://www.linkedin.com/in/carlobuama/">https://www.linkedin.com/in/carlobuama/</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </div>
     </div>
-</div>
 
-
-<div class="accessibility">
-    <div class="container">
-        <div class="row" style="padding: 0 0 10rem;">
-            <div class="six columns" style="text-align: center;">
-                <button class="button" onclick="viewingModeToggle()">Toggle Dark Mode (beta)</button>
-            </div>
-            <div class="six columns" style="text-align: center;">
-                <a class="button button-primary" href="#top" style="min-width:200px">Back to top</a>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
