@@ -59,7 +59,7 @@
         }
 
         .full-section {
-            min-height: 100vh;
+            min-height: 100vh; /* Full viewport height */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -68,6 +68,10 @@
             padding-right: 1rem;
             overflow-x: hidden;
             word-wrap: break-word;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
     </style>
@@ -115,14 +119,10 @@
         </div>
     </nav>
     <!--navbar end-->
-    
-    <!--big name and picture-->
+
     <div class="container section">
-
-        
-
         <!--picture and name-->
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5" style="max-width: 900px; margin: 0 auto; padding: 50px;">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5" style="max-width: 900px; margin: 0 auto; padding: 20px 15px 30px;">
             <div class="col-md-3">
                 <div class="rounded-circle overflow-hidden" style="width:160px; aspect-ratio: 1 / 1;">
                     <img src="images/image0.jpg" alt="..." class="w-100 h-100 object-fit-cover">
@@ -135,11 +135,10 @@
                 <h6>Toronto, Ontario, Canada</h6>
             </div>
         </div>
-
-    </div> <!--container end-->
+        <!--end picture and name-->
 
     <!--text intro-->
-    <div class="container section d-flex flex-column">
+
         <div class="row">
             <div class="col text-center p-4">
                 <h2>Introduction</h2>
@@ -148,8 +147,6 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-8 px-4">
                 <p>Welcome to my webpage! My name is Carlo Buama. I am a 5th-year student in the Business Technology Management program at Toronto Metropolitan University.</p>
-
-                <p>I hope you enjoy looking around! :)</p>
 
                 <p>This page is under construction. Please visit the <a href="index_old.html">legacy site</a>.</p>
             </div>
