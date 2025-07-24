@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carlo Buama - About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My portfolio website!">
+    <meta name="author" content="Carlo Buama">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <style>
+
+        body {
+            color:rgb(54, 54, 54);
+        }
+
+        header {
+            background-color: #4479BC;
+            color: rgb(245, 245, 245);
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .section {
+            min-height: 300px;
+            display: flex;
+            flex-direction: column; /* stack children vertically */
+            align-items: center;    /* center horizontally */
+            justify-content: center; /* center vertically if you want */
+            padding: 40px 20px; 
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .terminal {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            white-space: nowrap;
+        }
+
+        #typed-text::after {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 1em;
+            background-color: white;
+            margin-left: 2px;
+            animation: blink 1s step-start infinite;
+        }
+
+        .full-section {
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .first-section {
+            min-height: 80vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <header class="d-none d-lg-block">
+        <h1>Carlo Buama</h1>
+    </header>
+    
+    
+    <!--navbar DO NOT MODIFY-->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom border-body sticky-top justify-content-center" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" id="brand" href="#">Carlo Buama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education & Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_old.html">Legacy Site</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <div class="container first-section section">
+        <div class="row">
+            <div class="col text-center p-4">
+                <h2>General Information</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 px-4">
+                <p>
+                    I am a Canadian of Filipino descent. I was born in Canada and raised in Toronto by my hardworking parents. 
+                    My mom immigrated from Singapore and my dad immigrated from the Philippines in the 90s. 
+                    I have lived in Toronto my whole life, though I've been fortunate to have the opportunity to travel to Italy, 
+                    the United States, and the Philippines a few times. I can speak English natively and I can probably speak 
+                    French well enough to get by. Sadly, I can't speak Tagalog but I think I can understand it pretty well.
+                </p>
+
+                <p>
+                    I love technology and I really enjoy tinkering with electronics as a hobby. I am always excited to mess around 
+                    with outdated technology like desktop computers to turn them into something useful for myself. One of my 
+                    favourite ongoing projects is my NAS server built using an old Dell Studio 435mt that I picked up from an 
+                    e-waste sale. I found that working on these projects and making mistakes has been the easiest way for me to learn about building 
+                    systems and learning how they work.
+                </p>
+
+                <p>
+                    I am equally passionate about music, whether it be playing or listening to it. I have been immersed in music 
+                    since I was a kid, starting off with piano lessons at the age of 6 and picking up clarinet, saxophone and bass guitar 
+                    later on. I have a few trophies from piano competitions from my childhood, and though I unfortunately no longer take 
+                    lessons for piano, I still love to jam out to random songs I learned by ear. I hope to learn trumpet one day so 
+                    I can get more noise complaints.
+                </p>
+            </div>
+        </div>
+
+        <!--see more button-->
+        <div class="row">
+            <div class="col-12 text-center p-2">
+                See More
+            </div>
+            <div class="col-12 text-center">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(54, 54, 54)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
+                </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container full-section section">
+        <div class="row">
+            <div class="col text-center p-4">
+                <h2>Title of section 2</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 px-4">
+                <p>Enter text content here</p>
+            </div>
+        </div>
+
+        <!--see more button-->
+        <div class="row">
+            <div class="col-12 text-center p-2">
+                See More
+            </div>
+            <div class="col-12 text-center">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(54, 54, 54)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
+                </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

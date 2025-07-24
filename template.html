@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carlo Buama - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My portfolio website!">
+    <meta name="author" content="Carlo Buama">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <style>
+
+        body {
+            color:rgb(54, 54, 54);
+        }
+
+        header {
+            background-color: #4479BC;
+            color: rgb(245, 245, 245);
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .section {
+            min-height: 300px;
+            display: flex;
+            flex-direction: column; /* stack children vertically */
+            align-items: center;    /* center horizontally */
+            justify-content: center; /* center vertically if you want */
+            padding: 40px 20px; 
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .terminal {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            white-space: nowrap;
+        }
+
+        #typed-text::after {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 1em;
+            background-color: white;
+            margin-left: 2px;
+            animation: blink 1s step-start infinite;
+        }
+
+        .full-section {
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .first-section {
+            min-height: 80vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <header class="d-none d-lg-block">
+        <h1>Carlo Buama</h1>
+    </header>
+    
+    
+    <!--navbar DO NOT MODIFY-->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom border-body sticky-top justify-content-center" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" id="brand" href="#">Carlo Buama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education & Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_old.html">Legacy Site</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <div class="container first-section section">
+        <div class="row">
+            <div class="col text-center p-4">
+                <h2>Title of section 1</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 px-4">
+                <p>Enter text content here</p>
+            </div>
+        </div>
+
+        <!--see more button-->
+        <div class="row">
+            <div class="col-12 text-center p-2">
+                See More
+            </div>
+            <div class="col-12 text-center">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(54, 54, 54)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
+                </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container full-section section">
+        <div class="row">
+            <div class="col text-center p-4">
+                <h2>Title of section 2</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 px-4">
+                <p>Enter text content here</p>
+            </div>
+        </div>
+
+        <!--see more button-->
+        <div class="row">
+            <div class="col-12 text-center p-2">
+                See More
+            </div>
+            <div class="col-12 text-center">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(54, 54, 54)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
+                </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
